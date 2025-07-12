@@ -1,0 +1,23 @@
+[project]
+name = "mkpdf"
+version = "1.0.0"
+description = "Concatenate PDFs into a single file based on folder structure, with automatic outlines and optional image conversion"
+authors = [
+  { name = "Emiliano Faraoni" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pypdf>=3.9.1",
+  "Pillow>=10.0.0",
+  "rich>=13.0.0"
+]
+
+[project.scripts]
+mkpdf = "mkpdf.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+

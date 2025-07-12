@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+
+# macOS-specific
+.DS_Store
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# VS Code and other IDE settings
+.vscode/
+.idea/
+
+# Pytest cache
+.pytest_cache/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# mkpdf artifacts
+output.pdf
+
+# Backup files
+*~
+
+# Jupyter notebooks checkpoints (if any)
+.ipynb_checkpoints/
+
+# Vim ctags file
+tags
+
