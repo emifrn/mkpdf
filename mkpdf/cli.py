@@ -43,7 +43,7 @@ def main():
     format_group.add_argument("-p", action="store_true", default=False, help="Replace underscores and capitalize labels")
     format_group.add_argument("-q", choices=["low", "medium", "high"], help="Select image quality")
     format_group.add_argument("--dpi", type=int, help="Select DPI resolution")
-    format_group.add_argument("--page", choices=["letter", "a4"], help="Set image page size: 'letter' or 'a4'")
+    format_group.add_argument("--page", choices=["letter", "a4", "none"], default="letter", help="Set image page size: 'letter' or 'a4' (default 'letter')")
 
     meta_group = parser.add_argument_group("PDF metadata options")
     meta_group.add_argument("-t", "--title", metavar="STR", help="Set the PDF title")

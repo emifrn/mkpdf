@@ -145,7 +145,7 @@ def _convert_img_to_pdf(file: str, page: str, dpi: int) -> Path:
         tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
         tmp.close()
 
-        if page is not None:
+        if page is not None and page != "none":  # ← Add this check
             canvas = _resize_and_center(rgb, _get_canvas_size(page, dpi))
             canvas.save(tmp.name, format="PDF", dpi=(dpi, dpi))
         else:
